@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient( rgb(65, 10, 175), rgb(0, 0, 0));
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+header{
+    width: 100%;
+    background: linear-gradient(45deg,#3205ac, #0f0f0f);
+}
+header .inicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.inicio a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.box{
+    position: relative;
+    width: 300px;
+    height: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .4);
+    overflow: hidden;
+    border-radius: 4rem;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 140%;
+    background: linear-gradient(#ff0000, #eafa05);
+    animation: animar 2s linear infinite;
+}
+@keyframes animar {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: rgb(0, 0, 0);
+    border-radius: 4rem;
+}
+.box img{
+    position: relative;
+    width: 290px;
+    height: 245px;
+    z-index: 10;
+    opacity: 0.45;
+}
+.iniciais{
+    width: 400px;
+}
+.iniciais p{
+    position: relative;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: justify;
+    opacity: 0.7;
+}
+#projects .container{
+    flex-direction: column;
+}
+.container .obras{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.title h1{
+    color: white;
+    font-size: 3rem;
+}
+.caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(5, 249, 30);
+    background-color: rgb(110, 8, 220);
+    border-radius: 1rem;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+.contato{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+form{
+    position: relative;
+    left: 10%;
+    background: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    width: min-content;
+    align-items: center;
+    color: #f5f2f2;
+}
+.title{
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+.input{
+    min-width: 150px;
+    padding: 5px;
+    margin: 0px 0px 12px -4px;
+    font-size: 12px;
+}
+button{
+    width: 80px;
+    height: 25px;
+    background-color: rgb(110, 8, 220);
+    color: rgb(245, 245, 244);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+    font-size: 12px;
+}
+.icones{
+    display: flex;
+}
+.social a{
+    margin-left: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+footer .rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: rgb(109, 109, 110);
+    font-size: 15px;
+    font-weight: bolder;
+}
